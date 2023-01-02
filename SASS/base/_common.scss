@@ -11,7 +11,7 @@ html {
 body {
     background-color: var(--primary-white-color);
     color: var(--title-text-color);
-    font-family: Roboto, sans-serif;
+    font-family: var(--primary-title-font), var(--alt-title-font);
     font-size: 14px;
     letter-spacing: 0.03em;
 }

@@ -12,6 +12,9 @@
   --card-gap: 30px;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --time-animation: 250ms;
+  --primary-title-font: Roboto;
+  --alt-title-font: sans-serif;
+  --alt-font: Raleway;
 }
 
 .visually-hidden {
@@ -43,7 +46,7 @@ html {
 body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--primary-title-font), var(--alt-title-font);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -157,7 +160,7 @@ img {
 
 .logo {
   display: block;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--alt-font), var(--alt-title-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -1126,6 +1129,8 @@ textarea::placeholder {
   transition: box-shadow var(--time-animation) var(--timing-function), -webkit-box-shadow var(--time-animation) var(--timing-function);
 }
 .portfolio__link:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
